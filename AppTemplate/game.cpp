@@ -9,7 +9,7 @@ void Game::createStartScreen()
 }
 
 void Game::init() 
-{ /*
+{
   try {
     dr::Textures::init(GameData::path::TextureListFile);
     dr::Fonts::init(GameData::path::FontListFile);
@@ -19,7 +19,7 @@ void Game::init()
   }
   sf::Font& mainFont = dr::Fonts::get("Main");
 //  dr::Fonts::load("Main", "assets/font/brushtype.ttf");
-
+/*
   // sf::Text object for the buttons
   sf::Text buttonText;
   buttonText.setFont(mainFont);

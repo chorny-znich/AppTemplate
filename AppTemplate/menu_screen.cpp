@@ -5,8 +5,8 @@
 
 void MenuScreen::init()
 {
-  /*mBackground.setTexture(dr::Textures::get("MenuScreenBackground"));
-	
+  mBackground.setTexture(dr::Textures::get("MenuScreenBackground"));
+	/*
   dr::Button buttonAbout( { 200, 75 }, dr::TextManager::get("AboutButton"));
 	buttonAbout.setPosition({ 900, 800 });
   mButtons.push_back(buttonAbout);
@@ -51,8 +51,8 @@ void MenuScreen::update(sf::Time dt)
 void MenuScreen::render(sf::RenderWindow& window)
 {
 	window.setView(mMainView);
-  /*window.draw(mBackground);
-	for (auto& btn : mButtons) {
+  window.draw(mBackground);
+	/*for (auto& btn : mButtons) {
     btn.render(window);
   } */
 }

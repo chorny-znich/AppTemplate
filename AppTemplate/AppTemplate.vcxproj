@@ -146,12 +146,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="about_screen.cpp" />
     <ClCompile Include="AppTemplate.cpp" />
     <ClCompile Include="game.cpp" />
     <ClCompile Include="menu_screen.cpp" />
     <ClCompile Include="screen_manager.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="about_screen.h" />
     <ClInclude Include="game.h" />
     <ClInclude Include="game_data.h" />
     <ClInclude Include="menu_screen.h" />

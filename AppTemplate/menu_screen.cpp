@@ -6,13 +6,13 @@
 void MenuScreen::init()
 {
   mBackground.setTexture(dr::Textures::get("MenuScreenBackground"));
-	/*
+	
   dr::Button buttonAbout( { 200, 75 }, dr::TextManager::get("AboutButton"));
 	buttonAbout.setPosition({ 900, 800 });
   mButtons.push_back(buttonAbout);
   dr::Button buttonExit( { 200, 75 }, dr::TextManager::get("ExitButton"));
 	buttonExit.setPosition( { 900, 900 } );
-  mButtons.push_back(buttonExit); */
+  mButtons.push_back(buttonExit);
 }
 
 void MenuScreen::inputHandler(sf::Keyboard::Key key, bool isPressed)
@@ -20,7 +20,7 @@ void MenuScreen::inputHandler(sf::Keyboard::Key key, bool isPressed)
 }
 
 void MenuScreen::inputHandler(sf::Mouse::Button button, bool isPressed, sf::Vector2i position, sf::RenderWindow* window)
-{ /*
+{
 	size_t buttonIndex = -1;
 
 	for (size_t i = 0; i < mButtons.size(); ++i)
@@ -41,7 +41,7 @@ void MenuScreen::inputHandler(sf::Mouse::Button button, bool isPressed, sf::Vect
 	case 1:
 		dr::GameState::destroyScreen();
 		break;
-	} */
+	}
 }
 
 void MenuScreen::update(sf::Time dt)
@@ -52,7 +52,7 @@ void MenuScreen::render(sf::RenderWindow& window)
 {
 	window.setView(mMainView);
   window.draw(mBackground);
-	/*for (auto& btn : mButtons) {
+	for (auto& btn : mButtons) {
     btn.render(window);
-  } */
+  }
 }

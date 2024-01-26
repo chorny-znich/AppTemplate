@@ -18,8 +18,8 @@ void Game::init()
     std::cout << err.what() << std::endl;
   }
   sf::Font& mainFont = dr::Fonts::get("Main");
-//  dr::Fonts::load("Main", "assets/font/brushtype.ttf");
-/*
+  //dr::Fonts::load("Main", "assets/font/brushtype.ttf");
+
   // sf::Text object for the buttons
   sf::Text buttonText;
   buttonText.setFont(mainFont);
@@ -40,5 +40,5 @@ void Game::init()
   aboutText.setFillColor(sf::Color::Black);
 
   aboutText.setString("This is a template for all apps build on the DisReality game framework");
-  dr::TextManager::load("AboutText_1", aboutText); */
+  dr::TextManager::load("AboutText_1", aboutText);
 }

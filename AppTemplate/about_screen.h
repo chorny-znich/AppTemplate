@@ -2,15 +2,13 @@
 
 #include "game_data.h"
 #include <DisRealityGF.h>
-#include <vector>
 
-class MenuScreen : public dr::Screen
+class AboutScreen : public dr::Screen
 {
 private:
 	sf::View mMainView{ {0, 0, GameData::GraphicResolution.x, GameData::GraphicResolution.y} };
-	sf::Sprite mBackground;
+	std::vector<sf::Text> mInfo;
 	std::vector<dr::Button> mButtons;
-
 public:
 	void init();
 	void inputHandler(sf::Keyboard::Key key, bool isPressed);
@@ -18,3 +16,4 @@ public:
 	void update(sf::Time dt);
 	void render(sf::RenderWindow& window);
 };
+

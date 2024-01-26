@@ -33,10 +33,13 @@
     <ClCompile Include="game.cpp">
       <Filter>Исходные файлы\Engine</Filter>
     </ClCompile>
-    <ClCompile Include="screen_manager.cpp">
-      <Filter>Исходные файлы\Engine</Filter>
-    </ClCompile>
     <ClCompile Include="menu_screen.cpp">
+      <Filter>Исходные файлы\Screen</Filter>
+    </ClCompile>
+    <ClCompile Include="about_screen.cpp">
+      <Filter>Исходные файлы\Screen</Filter>
+    </ClCompile>
+    <ClCompile Include="screen_manager.cpp">
       <Filter>Исходные файлы\Screen</Filter>
     </ClCompile>
   </ItemGroup>
@@ -51,6 +54,9 @@
       <Filter>Файлы заголовков\Engine</Filter>
     </ClInclude>
     <ClInclude Include="menu_screen.h">
+      <Filter>Файлы заголовков\Screen</Filter>
+    </ClInclude>
+    <ClInclude Include="about_screen.h">
       <Filter>Файлы заголовков\Screen</Filter>
     </ClInclude>
   </ItemGroup>
